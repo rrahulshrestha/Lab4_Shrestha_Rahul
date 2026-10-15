@@ -1,0 +1,112 @@
+/* Café Menu Board — styles for the Module 4 exercise lab.
+   You do not need to edit this file. Use these class names in your JSX. */
+
+body {
+  margin: 0;
+  background: #f4efe9;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2b1d14;
+}
+
+.menu {
+  width: 640px;
+  margin: 50px auto;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(75, 46, 31, 0.18);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 18px 24px;
+  background: #4b2e1f;
+  color: #ffffff;
+  border-bottom: 4px solid #c8a27a;
+}
+
+header h1 {
+  flex-grow: 1;
+  margin: 0;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.count {
+  padding: 6px 12px;
+  background: #c8a27a;
+  color: #4b2e1f;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 0.85em;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 14px 24px;
+  border-bottom: 1px solid #efe7df;
+}
+
+.item-text {
+  flex-grow: 1;
+}
+
+.item-name {
+  display: block;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #4b2e1f;
+}
+
+.item-desc {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.85em;
+  color: #7a6a5e;
+}
+
+.badge-veg {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 7px;
+  border-radius: 10px;
+  background: #dcf0e7;
+  color: #0d6a50;
+  font-size: 0.65em;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+}
+
+.price {
+  font-family: "Courier New", monospace;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4b2e1f;
+}
+
+.sold-out {
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: #fae2de;
+  color: #a63428;
+  font-size: 0.75em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.menu-item.is-sold-out .item-name,
+.menu-item.is-sold-out .item-desc {
+  color: #b5aaa1;
+  text-decoration: line-through;
+}
+
+footer {
+  padding: 12px 24px;
+  background: #faf7f3;
+  color: #7a6a5e;
+  font-size: 0.85em;
+  text-align: center;
+}
